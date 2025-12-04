@@ -44,3 +44,5 @@ android/app/src/main/AndroidManifest.xml
       
       flutter run
 
+5.or Just Download the app:
+        https://github.com/shivanktyagi001/routo_demo/releases/tag/v1.0.0
