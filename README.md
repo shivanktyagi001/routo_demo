@@ -1,16 +1,48 @@
-# routo_demo
+A lightweight Flutter maps prototype that demonstrates essential location-based features without any backend. The app includes live GPS tracking, weather-on-tap, distance measurement, favorites saving, and dark mode — all built using clean architecture and simple APIs.
 
-A new Flutter project.
+1. Key Features (Short & Precise)
 
-## Getting Started
+Live Location: Displays the user’s current position on the map.
 
-This project is a starting point for a Flutter application.
+Weather on Tap: Tap anywhere to see real-time weather for that location.
 
-A few resources to get you started if this is your first Flutter project:
+Distance Measure: Tap two points to instantly calculate the distance.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Favorites: Long-press to save a location and access it later.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Dark Mode: One-tap toggle between light and dark themes.
+
+🔧 Setup Instructions (Quick)
+
+Clone the project
+
+git clone <repo-url>
+
+
+Add your API keys in lib/core/env.dart
+
+class Env {
+  static const String openWeatherKey = "YOUR_OPENWEATHER_KEY";
+  static const String mapsKey = "YOUR_GOOGLE_MAPS_KEY";
+}
+
+
+Add Google Maps key inside
+android/app/src/main/AndroidManifest.xml
+
+<meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="YOUR_GOOGLE_MAPS_KEY"/>
+
+
+Install dependencies
+
+flutter pub get
+
+
+Run the app
+
+flutter run
+
+
+If you want, I can also generate:
